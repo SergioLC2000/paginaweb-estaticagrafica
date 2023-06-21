@@ -1,0 +1,819 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="https://www.unizar.es/" target="_blank" class="logo" style="background-color: blue;">UNIZAR</a>
+				</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Introducción</a></li>
+							<li><a href="generic.html">Teoría</a></li>
+							<li class="active"><a href="elements.html">Biblioteca</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+
+								<!-- Text stuff -->
+									<h2>Biblioteca Estática Gráfica</h2>
+									<p>En primer lugar se presentan ejemplos de estática gráfica sencillos para análisis de diagramas de forma impuestos.</p>
+									<p>A continuación, se recopilan dos ejemplos particulares utilizando la
+										metodología de la parábola para el análisis y resolución de geometrías en forma de arcos. <br>
+										En primer lugar, se muestra el análisis completo de una estructura a compresión pura
+										compuesta por dos arcos.<br>
+										En segundo lugar se muestra Free-Form Thruses, dónde se compara el comportamiento
+										de un forma cualquiera con su funicular impuesta, para poder definir barras articuladas
+										que compensen el momento flector.</p>
+									
+									<h3>Metodlogía estática gráfica</h3>
+									<h4>Puente Peatonal 1</h4>
+
+									<p>El esquema principal viene definido por las siguiente condiciones:</p>
+									<div class="box">
+										<ul>
+											<li>El puente, de 12 metros de longitud, tiene un peso F1 que se trasmite a un cable
+												N1 en el centro de la plataforma.</li>
+											<li>N1, N2 y N3 son los tirantes que sujetan el puente, y son sometidos a análisis
+												para resolver los esfuerzos asociados a cada elemento.</li>
+											<li>La Figura (a) muestra una configuración del diagrama de forma del puente
+												en la plataforma Geogebra, donde los puntos A y B son extremos móviles los
+												cuáles el usuario puede modificar para obtener diferentes combinaciones para
+												ver su correspondiente diagrama de Fuerza.</li>
+										</ul>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/CC_0.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+
+									<h4>Puente Peatonal 2</h4>
+
+									<p>El esquema principal viene definido por las siguiente condiciones:</p>
+									<div class="box">
+										<ul>
+											<li>F1 y F2 representan los puntos de apoyo de los tirantes sobre el puente. Dichos
+												puntos son interactivos y se mueven a lo largo de la luz del puente.</li>
+											<li>N1, N2 y N3 son los tirantes que sujetan el puente, y son sometidos a análisis
+												para resolver los esfuerzos asociados a cada elemento.</li>
+											<li>Diagrama de Forma interactivo véase Figura (a), dónde los puntos A y B
+												son extremos móviles a lo largo de sus contornos dónde el usuario puede ver
+												las diferentes combinaciones que forman en el espacio para ver su correspondiente
+												Diagrama de Fuerza.</li>
+										</ul>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/CC_1.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<p>Como se muestra en la Figura (b), se establecen dos diagramas de forma:
+										<ol>
+											<li>Diagrama de fuerza en morado, cuyas condiciones en cargas estarían en equilibrio
+												con el diagrama de forma final..</li>
+											<li>Diagrama de fuerza discontinuo en rojo, asociado al diagrama de forma impuesto
+												por el usuario, dónde Nip son los segmentos paralelos asociados a a los
+												tirantes del diagrama de forma.</li>
+										</ol>
+									</p>
+
+									<p>El diagrama de fuerza en rojo no permanece en equilibrio ya que el punto A no
+										pertenece al segmento N3p.</p>
+
+									<p>Para encontrar la funicular que permanezca en equilibrio con la imposición de
+										cargas, el usuario debe modificar las cotas de los apoyos.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/CC_2.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+									
+									<p>Como se puede apreciar en la anterior Figura (a), la altura de A ha aumentado con
+										respecto a la posición en la primera Figura (a) y con ello, se ha configurado un nuevo diagrama
+										de Fuerza, coincidiendo con la solución de equilibrio.</p>
+
+									<p>Con respecto al diagrama de fuerza (Figura(b)), las longitudes de los diferentes
+										segmentos en centímetros (N1,N2 y N3) representan los esfuerzos a los que estarían
+										sometidos los diferentes elementos del diagrama de forma.</p>
+
+
+									<h3>Metodología de la parábola</h3>
+									<h4>Arcos consecutivos</h4>
+
+									<ul>
+										<li>Se establecen 3 apoyos (Nodo 1, Nodo 2 y Nodo 3). Dichos nodos serán paramétri-
+											cos, pudiendo resolver la geometría para diferente luz total.</li>
+										<li>Se define dos grupos de cargas:
+											<ol>
+												<li>Cargas12, asociado al número total de cargas distribuidas a lo largo de la
+													Luz12.</li>
+												<li>Cargas23, asociado al número total de cargas distribuidas a lo largo de la
+													Luz23.</li>
+												<li>Dichas cargas discretizan la luz entre los diferentes apoyos.</li>
+											</ol>
+										</li>
+										<li>Para cada par de apoyos ij, se establecen los puntos paramétricos Gij, hacen
+											referencia al ángulo que definirá la reacción total en los apoyos.</li>
+										<li>Para cada par de apoyos ij, se establecen los puntos Iij, hacen alusión a la altura
+											máxima de la funicular resultante, y viene definida por la mitad del segmento
+											Gij - Pij</li>
+										<li>Los segmento Aij y Bij para cada par de nodos, los cuáles se utilizan para resolver la funicular final.</li>
+									</ul>
+
+									<p>A continuación se muestra la metodología para resolver el problema, definido
+										con las siguiente características:</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/AC_0.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/AC_1.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Ya que los apoyos no permanecen en la misma cota, se necesita realizar un método
+										iterativo. En primer lugar, se establece un Polo aleatorio, con el fin de generar dos funiculares
+										cualquiera, que cumplan únicamente las condiciones de contorno en carga.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/AC_2.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Construyendo las funiculares a través de dichos diagramas de forma, los apoyos
+										1’, 2’ y 3’ no reflejan ninguna relación con los apoyos originales, se extraen los
+										segmento aij y bij para cada par de apoyos, los cuáles definen la geometría de la funicular
+										aleatoria por los puntos Nodoi′ , Nodoj′ y I′
+										ij.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/AC_3.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Dichas paralelas tienen sus homólogas en las condiciones de contorno iniciales
+										(segmentos Aij y Bij para cada par de apoyos), se utilizan como paralelas
+										en las intersecciones Ibi y Iia, y las intersecciones entre ambas rectas definen
+										el Polos Finales.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/AC_4.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Con la información de los diagramas de fuerza que componen los Polos finales,
+										se construye los arcos que satisfacen la condición de contener los apoyos 1, 2 y 3.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/AC_5.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Las funiculares presentadas en Figura (a) y (b) vienen caracterizadas por la
+										anterior imposición de variables.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/AC_6.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>De cara a resaltar las conclusiones más importantes del diagrama de fuerza:</p>
+
+									<ul>
+										<li>Las condiciones de contorno en carga total viene dado por el vector WTotal.</li>
+										<li>Los vectores R1, R2 y R3 hacen referencia tanto a la reacción en kN que habría
+											en sus nodos correspondientes para establecer el equilibrio estático, como el
+											ángulo paralelo para formar el polígono funicular de forma en los extremos
+											del arco.</li>
+									</ul>
+
+									<h5>¡Ejemplo Interactivo!</h5>
+
+									<p>Ha llegado el momento, comprueba la teoría por tí mismo y prueba diferentes combinaciones!</p>
+
+									<iframe scrolling="no" title="ArcosComposicion_VersionFinal" src="https://www.geogebra.org/material/iframe/id/becfwvjb/width/1366/height/695/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="705px" style="border:0px;"> </iframe>
+
+
+									<h4>Free Form Thruses</h4>
+
+									<p>El segundo ejemplo trata sobre el diseño controlado de estructuras con una forma no funicular y de forma libre.</p>
+									<p>Dichas estructuras pueden transformarse en funiculares de forma libre añadiendo un sistema de rigidez a tensión en relación a la magnitud del momento de flexión en la curva.</p>
+									<p>Las acciones de esta estructura libre de forma reforzada será las mismas que las de la solución funicular (línea discontinua).</p>
+									<p>En este ejemplo, la forma general de la estructura libre de forma está controlada por una curva de control en 3 puntos interiores (C, D y E) y dos exteriores asociados a los apoyos de la estructura (A y B).</p>
+									<p>Dado un conjunto de cargas (en este caso, una carga uniforme a lo largo de la curva de control), se puede construir una solución funicular a través de los soportes y un tercer punto elegido.</p>
+									<p>Esta línea representa una posible solución sin flexión para la carga dada. El momento de flexión M en cualquier punto a lo largo de la curva de control es proporcional a su desviación de la solución funicular: M = Hv, donde H es el empuje (horizontal) de la estructura, y v es la distancia vertical entre la curva de control y la funicular.</p>
+									<p>Donde la solución funicular y la curva de control se intersectan, el momento de flexión es cero. Al elegir la magnitud de la fuerza de tensión en el cable de refuerzo, T, se determina completamente la forma del sistema de refuerzo, ya que M = Td, donde d es la distancia perpendicular a la curva de control. Este sistema transforma la curva de control en una línea de empuje con la forma libre deseada.</p>
+									<p>En un entorno interactivo, se pueden explorar y diseñar con precisión diferentes configuraciones de este sistema estructural complejo sin realizar cálculos, simplemente determinando la forma general de la estructura utilizando los puntos de control de la curva de control, eligiendo la forma de la funicular a través de la ubicación del punto de flexión cero y eligiendo el tamaño deseado de la fuerza del cable en el sistema de refuerzo.</p>	
+									
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_0.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Para comenzar el análisis de la metodología es necesario establecer una serie de
+										condiciones:</p>
+
+										<ul>
+											<li>Se define una curva que tiene cinco puntos de control (A, B, C, D y E), la cuál
+												viene limitada por los puntos A y B (apoyos de la estructura).</li>
+											<li>Se divide la luz de la estructura en NCargas + 1, haciendo referencia a la carga
+												distribuida que actúa en la funicular.</li>
+											<li>Se define el punto F, pertenece a la curva generada, y se utiliza para establecer
+												de forma paramétrica funiculares que contengan dicho punto.</li>
+										</ul>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_1.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>A continuación se muestra la metodología para resolver el problema, definido
+										con las siguiente características:</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_2.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Para comenzar, se establecen las paralelas RMitadAF y RMitadFB que permiten delimitar
+										la mitad entre los puntos AF y FB.Acontinuación, se trazan las rectas ParalelaAF
+										y ParalelaFB e intersectan con las paralelas anteriores en R1 y R2.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_3.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Con todo ello, se ha creado el diagrama
+										de fuerza asociado a la funicular
+										que pasa por el punto F. Como se ve
+										en la siguiente Figura, se han puesto en dirección
+										Y las 12 cargas de 0,7 kN, por
+										la escala utilizada (Escala 1kN :1 cm),
+										el vector RTotal equivale a 8,4 centímetros.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_4.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>El punto U hace referencia al porcentaje
+										de carga que admite cada funicular en relación
+										a la posición del punto F a lo largo del
+										eje X.</p>
+
+									<p>Una vez establecido dichos puntos, se trazan paralelas con A1, A2, B1 y B2 cómo
+										se muestra en la Figura anterior, y se construye el diagrama de fuerza Trial.</p>
+
+									<p>Para encontrar el Polo que defina la funicular
+										final, utilizamos el PoloT1 y PoloT2 y
+										establecemos paralelas A2 y B2 respectivamente,
+										la intersección define el PoloF.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_7.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>La longitud de los vectores ATotal
+										y BTotal hacen referencia a la reacción
+										en los apoyos A y B, tanto en dirección
+										como en sentido. La escala que
+										relaciona la longitud con la fuerza, se
+										ha definido como 1 centímetro es un 1
+										kN.</p>
+
+									<p>Se unen los puntos que representan las cargas al PoloF y construimos la funicular
+										en el diagrama de forma, dónde el punto RF es la intersección
+										de las paralelas ATotal y BTotal por sus apoyos respectivamente.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_6.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Como se ha comentado anteriormente, la funicular es una posible solución sin
+										flexión, para trasladar la misma definición a la curva de control es necesario aplicarle
+										un momento proporcional a la desviación con respecto a la funicular establecida.</p>
+
+									<p>Viene dado por la siguiente expresión:</p>
+
+
+
+									<p>Donde H refleja el empuje horizontal de la estructura, v la distancia vertical entre
+										el punto de la funicular y la curva de control, T es la tensión del cable kN, y d
+										longitud de la barra que genera dicha transformación.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_8.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									<p>Se establece la variable T como paramétrica, donde el usuario puede combinar
+										diferentes magnitudes para resolver el valor d y visualizar su influencia en la estructura
+										final.</p>
+
+									<p>Cabe destacar que cuándo el punto de la curva de control tiene mayor cota que
+										el punto de la funicular, se establece la barra que genere el momento contrario.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FFT_9.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<h5>¡Ejemplo Interactivo!</h5>
+
+										<p>Ha llegado el momento, comprueba la teoría por tí mismo y prueba diferentes combinaciones!</p>
+
+										<iframe scrolling="no" title="FreeFormThruses_VersionFinal" src="https://www.geogebra.org/material/iframe/id/euskqpk8/width/1366/height/745/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="705px" style="border:0px;"> </iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+									<hr />
+									
+									<h2>Biblioteca TNA</h2>
+									<p>A continuación se muestra el índice de los ejemplos realizados en función de sus características principales:</p>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Descripción</th>
+													<th>Metodología</th>
+													<th>Puntos interiores</th>
+													<th>Puntos exteriores</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Primera Cúpula</td>
+													<td>Formulación Lineal</td>
+													<td>1</td>
+													<td>4</td>
+												</tr>
+												<tr>
+													<td>Segunda Cúpula</td>
+													<td>Formulación Lineal</td>
+													<td>4</td>
+													<td>4</td>
+												</tr>
+												<tr>
+													<td> Tercera Cúpula</td>
+													<td>Formulación Lineal</td>
+													<td>8</td>
+													<td>8</td>
+												</tr>
+												<tr>
+													<td>Great Court</td>
+													<td>Implementación Matricial</td>
+													<td>16</td>
+													<td>48</td>
+												</tr>
+												<tr>
+													<td>Striatus Bridge</td>
+													<td>Implementación Matricial</td>
+													<td>56</td>
+													<td>25</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h3>Formulación Lineal</h3>
+
+									<h4>Primera Cúpula</h4>
+									<p>La primera cúpula propuesta presenta una planta rectangular de 2x2 metros discretizada
+										en 5 puntos con un total de 4 secciones. Al ser una planta sencilla, se puede
+										emplear el análisis simple.</p>
+
+										<h5>Condiciones de contorno</h5>
+									<div class="box">
+										<ul>
+											<li>Se establecen como apoyos los nodos <strong><em> 2 ,3 ,4 y 5</em></strong>, haciendo referencia que su
+												cota será cero, y por lo tanto su altura es conocida.</li>
+											<li>Se establece una carga (P) parametrizable controlada por el usuario, cabe destacar
+												que su magnitud será en Newtons.</li>
+											<li>Se establece un factor de escala (ζ) parametrizable controlada por el usuario.</li>
+										</ul>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/PC_0.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+
+									<p>Una vez establecida la Malla Primal Γ, se plantea el equilibrio vertical en función
+										de la numeración establecida.</p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/PC_2.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<p>Se reformula en el plano horizontal a través de la geometría de la planta para tener
+										como incógnita la altura de los puntos internos, en este caso sólo uno, en vez de las
+										fuerzas, es decir, la geometría pasa a ser el objetivo de resolución del problema.</p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/PC_3.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/PC_4.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/PC_5.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/PC_6.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/PC_7.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<h5>¡Ejemplo Interactivo 1!</h5>
+
+									<p>Ha llegado el momento, comprueba la teoría por tí mismo y prueba diferentes combinaciones!</p>
+
+									<iframe scrolling="no" title="TNA1_VersionFinal" src="https://www.geogebra.org/material/iframe/id/kukeaevw/width/1366/height/705/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="705px" style="border:0px;"> </iframe>
+
+
+									
+
+									<h4>Segunda Cúpula</h4>
+									<p>La segunda cúpula propuesta presenta una planta rectangular de 10x10 metros
+										discretizada en 8 puntos con un total de 5 secciones.</p>
+
+										<h5>Condiciones de contorno</h5>
+									<div class="box">
+										<ul>
+											<li>Se establecen como apoyos los nodos <strong><em> 5 ,6, 7 y 8</em></strong>, haciendo referencia que su
+												cota será cero, y por lo tanto su altura es conocida.</li>
+											<li>Se establece una carga (P) parametrizable controlada por el usuario, cabe destacar
+												que su magnitud será en Newtons.</li>
+											<li>Se establece un factor de escala (ζ) parametrizable controlada por el usuario.</li>
+										</ul>
+									</div>
+
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/FL_0.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<p>Una vez establecida la <strong><em>Malla Primal Γ</em></strong>, se plantea el equilibrio vertical en función de
+										la numeración establecida.</p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_3.PNG" alt="" style="margin-bottom: 10px;" />
+										</div>
+									</div>
+
+									<p>Las longitudes de las ramas ji en la <strong><em>Malla Primal Γ</em></strong> están definidas mediante L<sup>H</sup><sub>ji</sub>, 
+										véase <strong><em>Figura 2.4</em></strong>.</p>
+									
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_4.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_5.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+								
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_6.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_7.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+								
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_8.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<h5>¡Ejemplo Interactivo 2!</h5>
+
+									<p>Ha llegado el momento, comprueba la teoría por tí mismo y prueba diferentes combinaciones!</p>
+
+									<iframe scrolling="no" title="TNA2_VersionFinal" src="https://www.geogebra.org/material/iframe/id/qjmqaj7b/width/1366/height/705/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="705px" style="border:0px;"> </iframe>
+
+
+									<h4>Tercera Cúpula</h4>
+									
+									<p>La tercera cúpula propuesta presenta una planta cuadrada de 8,4x8,4 metros discretizada
+										en 16 puntos con un total de 11 secciones. Al ser una planta sencilla, nuevamente,
+										se puede emplear el análisis simple.</p>
+
+										<h5>Condiciones de contorno</h5>
+									<div class="box">
+										<ul>
+											<li>Se establecen como apoyos los nodos <strong><em> 9, 10, 11, 12, 13, 14, 15 y 16</em></strong>, haciendo referencia que su
+												cota será cero, y por lo tanto su altura es conocida.</li>
+											<li>Se establece una carga (P) parametrizable controlada por el usuario, cabe destacar
+												que su magnitud será en Newtons.</li>
+											<li>Se establece un factor de escala (ζ) parametrizable controlada por el usuario.</li>
+										</ul>
+									</div>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_9.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+									
+									<p>Una vez establecida la <strong><em>Malla Primal Γ</em></strong>, se plantea el equilibrio vertical en función
+										de la numeración establecida.</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_11.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_12.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_13.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_14.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_15.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/FL_16.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+
+								<h5>¡Ejemplo Interactivo 3!</h5>
+
+									<p>Ha llegado el momento, comprueba la teoría por tí mismo y prueba diferentes combinaciones!</p>
+
+									<iframe scrolling="no" title="TNA3_VersionFinal" src="https://www.geogebra.org/material/iframe/id/wnwghuja/width/1366/height/705/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="705px" style="border:0px;"> </iframe>
+
+									<h3>Implementación Matricial</h3>
+
+									<p>A continuación, se muestran los dos ejemplos realizados a través de la implementación matricial!</p>
+
+									<h4>Great Court</h4>
+
+									<p>La primera propuesta como ejemplo realizado mediante la resolución matricial
+										es el de la cubierta acristalada del Great Court en el British Museum de Londres,
+										un área rectangular de 73 x 97 metros que contiene una circunferencia de 44 métros
+										de diámetro desplazada con un offset de 3 metros en el eje x que representa la “sala
+										de lectura” o Reading Room. Los datos geométricos se han obtenido de un estudio
+										sobre el desarrollo de la cúpula de J.K.Williams (2001).</p>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/IM_0.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<div class="image main">
+											<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+											<img src="images/IM_1.PNG" alt="" style="margin-bottom: 1px;" />
+											</div>
+										</div>
+
+										<h5>Condiciones de contorno</h5>
+									<div class="box">
+										<ul>
+											<li>Se establecen como apoyos los nodos <strong><em> 1, 2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 y 16</em></strong>, haciendo referencia que su
+												cota será cero, y por lo tanto su altura es conocida.</li>
+											<li>Consta de una malla discretizada en 48 nodos, dónde hay 48 ramas y está formada por 32 polígonos. </li>
+											<li>Se establece una carga (P) parametrizable controlada por el usuario, cabe destacar
+												que su magnitud será en Newtons.</li>
+											<li>Se establece un factor de escala (ζ) parametrizable controlada por el usuario.</li>
+										</ul>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/IM_2.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+								<p>Una vez definida la caracterización global de la <strong><em>Malla Primal Γ</em></strong>, se dispone a realizar
+									la matriz C de relaciones nodales.<br>
+									Cómo se ha explicado en la teoría, el procedimiento consiste en seguir el
+									flujo de fuerzas propuesto, y completar la matriz con 1 si el punto representa la cabeza
+									de la línea de fuerza, -1 si representa la cola de la línea de fuerza, ó 0 en el resto
+									de los casos.<br>
+									El siguiente paso es el desarrollo de la <strong><em>Malla dual</em></strong> a partir de las ramas convergentes
+									en cada punto orientadas en el sentido de las agujas del reloj las entrantes al nodo y
+									en el opuesto las salientes.<br>
+									Este proceso ha tenido una dificultad añadida para su realización debido a que las
+									ramas son muy irregulares y los ángulos complejos, pero finalmente se ha llegado a
+									una malla como la mostrada en la Figura 4.8, dónde P<sub>i</sub> hace referencia al polígono que representa el equilibrio nodal del punto i en la <strong><em>Malla Primal Γ</em></strong> </p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/IM_3.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+								<p>A partir de esta malla se puede construir la matriz de relaciones del diagrama
+									recíproco <strong><em>C*</em></strong> de dimensiones <i>m x p</i> siendo <i>m</i> el número de líneas de fuerza y <i>p</i> el
+									número de polígonos de la malla original, que en la dual se han convertido en puntos.</p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/IM_4.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+								<p>Tal y cómo se ha definido en la programación, se ha definido como valores paramétricos
+									tanto la carga asociada a cada nodo interior que será uniforme para todos como el factor de escala ζ, dando la oportunidad al usuario de componer diferentes
+									soluciones de estructuras.</p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/IM_5.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>		
+									
+								<p>Una vez realizado lo anterior, se calculan las longitudes de las ramas en ambos diagramas
+									y se aplican la ecuación para la resolución del problema y poder definir las
+									alturas de los nodos interiores.</p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/IM_6.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>	
+
+								<h5>¡Ejemplo Interactivo 4!</h5>
+
+								<p>Ha llegado el momento, comprueba la teoría por tí mismo y prueba diferentes combinaciones!</p>
+								
+								<iframe scrolling="no" title="GreatCourtTNA_VersionFinal" src="https://www.geogebra.org/material/iframe/id/c4vvz9s8/width/1366/height/705/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="705px" style="border:0px;"> </iframe>
+
+									<h4>Striatus Bridge</h4>
+
+								<p>La segunda propuesta como ejemplo realizado mediante la resolución matricial
+									es el Puente Striatus, realizado gracias tanto al grupo de investigación Block Research Group cómo a la firma británica de arquitectura Zaha Hadid
+									Architects.</p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/PSM_0.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/PSM_1.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+								<p>La Malla Primal Γ se compone de la siguiente información:</p>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/PSM_3.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+									<div class="image main">
+										<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+										<img src="images/PSM_4.PNG" alt="" style="margin-bottom: 1px;" />
+										</div>
+									</div>
+
+								<p>Realizamos su diagrama recíproco mediante la herramienta RhinoVAULT estableciendo la escala a centímetros.</p>
+
+								<div class="image main">
+									<div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+									<img src="images/DualGridPS.png" alt="" style="margin-bottom: 1px;" />
+									</div>
+								</div>
+								
+								<p>Por último, se muestra el comportamiento de la estructura en la plataforma Geogebra en función de los parámetros principales cómo el peso y el factor de escala!</p>
+								
+								<p>Para más información sobre el modelo visita el siguiente enlace de <a href="https://www.geogebra.org/m/ayjcerte" target="_blank">Archivo de Puente Striatus TNA</a>.</p>
+
+								<div style="max-width: 1376px; max-height: 705px;">
+									<video controls width="100%" height="auto">
+										<source src="Behaviour_StriatusBridge_TNA.mp4" type="video/mp4">
+									</video>
+								</div>
+
+				
+							</section>
+
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
